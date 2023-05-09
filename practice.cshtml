@@ -35,16 +35,19 @@ else
 {
     <p>All Wrong</p>
 }
-<form method="POST">
+@if (Model.isok == false)
+{
+    <form method="POST">
 
-    <label>Name</label> <br>
-    <input type="text" name="name" required> <br>
+        <label>Name</label> <br>
+        <input type="text" name="name" required> <br>
 
-    <label>A</label> <br>
-    <input type="text" name="a" required> <br>
+        <label>A</label> <br>
+        <input type="text" name="a" required> <br>
 
-    <label>B</label> <br>
-    <input type="text" name="b" required> <br><br>
+        <label>B</label> <br>
+        <input type="text" name="b" required> <br><br>
 
-    <input type="submit" value="submit">
-</form>
+        <input type="submit" value="submit">
+    </form>
+}
